@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Podyglot: Spoken French &amp; GCSE Listening</title>
+<meta name="description" content="Podyglot is an iPhone app that trains you to understand French as it is actually spoken, with a GCSE French listening course for the CCEA board.">
+<meta property="og:title" content="Podyglot: Spoken French &amp; GCSE Listening">
+<meta property="og:description" content="Understand French as it is actually spoken. A few minutes a day, by ear, at native speed.">
+<meta property="og:image" content="https://basecodex.com/podyglot.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root {
+    --ink: #111;
+    --paper: #fafaf7;
+    --muted: #5b5b57;
+    --rule: #e3e2dc;
+    --card: #ffffff;
+    --accent: #0f8b82;
+    --accent-soft: #e2f3f1;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2f2ee;
+      --paper: #121212;
+      --muted: #a3a39d;
+      --rule: #2b2b29;
+      --card: #1b1b1a;
+      --accent: #4fc7bc;
+      --accent-soft: #15302d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: max(env(safe-area-inset-top), 0px) 20px max(env(safe-area-inset-bottom), 0px);
+  }
+  header.hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 36px;
+    align-items: center;
+    padding-block: 72px 56px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero img {
+    width: 168px;
+    height: 168px;
+    border-radius: 38px;
+    background: #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  h1 {
+    font-size: clamp(40px, 7vw, 64px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0 0 10px;
+  }
+  .subtitle {
+    font-size: clamp(19px, 2.6vw, 24px);
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+  .lede { font-size: 19px; margin: 0 0 22px; max-width: 34em; }
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .status::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  section { padding-block: 56px; border-bottom: 1px solid var(--rule); }
+  h2 {
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 22px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .card h3 { font-size: 19px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .card p { margin: 0; color: var(--muted); }
+  .gcse {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 36px;
+    align-items: start;
+  }
+  .gcse h3 { font-size: clamp(26px, 4vw, 34px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 14px; }
+  .gcse p { margin: 0 0 14px; }
+  .facts { list-style: none; margin: 0; padding: 0; }
+  .facts li {
+    display: grid;
+    grid-template-columns: 5.5em 1fr;
+    gap: 14px;
+    padding-block: 14px;
+    border-top: 1px solid var(--rule);
+  }
+  .facts li:first-child { border-top: 0; padding-top: 0; }
+  .facts b { font-size: 26px; line-height: 1.1; letter-spacing: -0.02em; color: var(--accent); }
+  .facts span { color: var(--muted); }
+  footer {
+    padding-block: 36px 48px;
+    color: var(--muted);
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    justify-content: space-between;
+  }
+  @media (max-width: 640px) {
+    header.hero { grid-template-columns: 1fr; gap: 24px; padding-block: 40px 40px; }
+    .hero img { width: 112px; height: 112px; border-radius: 26px; }
+    .gcse, .grid { grid-template-columns: 1fr; }
+    .gcse { gap: 24px; }
+    section { padding-block: 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <img src="podyglot.png" alt="Podyglot app icon: a cartoon face wearing headphones">
+    <div>
+      <h1>Podyglot</h1>
+      <p class="subtitle">Spoken French &amp; GCSE Listening</p>
+      <p class="lede">An iPhone app that trains you to understand French as it is actually spoken. A few minutes a day, by ear, at native speed.</p>
+      <span class="status">In beta on TestFlight, for iPhone</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Listening first</h3>
+        <p>Every lesson is spoken by native voices. You hear a sentence before you read it, and ear training works on the sounds English speakers tend to merge.</p>
+      </div>
+      <div class="card">
+        <h3>A plan for every day</h3>
+        <p>Each day is a short set: listen, learn, recall, fix. Reviews that are due come before anything new, so missing a day never turns into a backlog.</p>
+      </div>
+      <div class="card">
+        <h3>Today, in French</h3>
+        <p>A fresh news edition every morning, written for learners from stories confirmed by independent sources, so the French you practise is about the real world.</p>
+      </div>
+      <div class="card">
+        <h3>Learn together</h3>
+        <p>Invite family and friends into a circle and learn alongside each other. Free to start, with a Premium subscription for the full course.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>GCSE French</h2>
+    <div class="gcse">
+      <div>
+        <h3>A listening course built around the exam.</h3>
+        <p>Podyglot has a GCSE mode for the CCEA French listening paper. It follows the board&rsquo;s own Foundation vocabulary list, day by day, until every word on it has been heard in context.</p>
+        <p>Practice questions are derived from the board&rsquo;s real past papers and checked by hand, one by one, before they reach a learner. A mock listening exam runs on the board&rsquo;s own clock, so the real one holds no surprises.</p>
+      </div>
+      <ul class="facts">
+        <li><b>180</b><span>days in the course schedule, with the full Foundation list covered before the end</span></li>
+        <li><b>100%</b><span>of the board&rsquo;s core vocabulary appendix taught in context</span></li>
+        <li><b>Real</b><span>past papers as the source of every question style, each reviewed by a person</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 BaseCodex</span>
+    <span>Podyglot is in private beta. French (France) first, more languages to follow.</span>
+  </footer>
+
+</div>
+</body>
+</html>
