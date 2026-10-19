@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Podyglot: Spoken French &amp; GCSE Listening</title>
+<meta name="description" content="Podyglot trains you to understand French as it is actually spoken, a few minutes a day, by ear, at native speed. With a GCSE French listening course for the CCEA board. For iPhone and iPad.">
+<meta property="og:title" content="Podyglot: Spoken French &amp; GCSE Listening">
+<meta property="og:description" content="Understand French as it is actually spoken. A few minutes a day, by ear, at native speed.">
+<meta property="og:image" content="https://basecodex.com/podyglot/splash.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#04070f">
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+  :root {
+    --edge: #04070f;
+    --stage: #0a1630;
+    --ink: #f2f4f8;
+    --muted: #a7b0c2;
+    --rule: rgba(255,255,255,.10);
+    --accent: #4fc7bc;
+    --blue: #8fb8ff;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--edge); }
+  body {
+    margin: 0;
+    background: var(--edge);
+    color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* PORTRAIT ONLY: one phone-width column, whatever the window. A wide or
+     landscape window shows broad dark borders either side of it. */
+  .stage {
+    width: min(100%, 440px);
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--stage);
+    box-shadow: 0 0 0 1px var(--rule), 0 0 80px rgba(0,0,0,.6);
+  }
+  /* The launch splash, as the app plays it. Kept to the window's height in
+     landscape, so it stays a whole portrait picture. */
+  .splash {
+    display: block;
+    width: min(100%, calc(100vh * 720 / 1290));
+    width: min(100%, calc(100svh * 720 / 1290));
+    aspect-ratio: 720 / 1290;
+    margin: 0 auto;
+    background: #000;
+    object-fit: cover;
+  }
+  .still { display: none; }
+  @media (prefers-reduced-motion: reduce) {
+    video.splash { display: none; }
+    .still { display: block; }
+  }
+  main { padding: 28px 22px 8px; }
+  .title { display: flex; align-items: center; gap: 14px; margin: 0 0 6px; }
+  .title img { width: 56px; height: 56px; border-radius: 13px; background: #000; }
+  h1 { font-size: 40px; line-height: 1; letter-spacing: -0.02em; margin: 0; }
+  .subtitle { font-size: 19px; font-weight: 600; color: var(--accent); margin: 10px 0 14px; }
+  .lede { margin: 0 0 18px; }
+  .devices {
+    display: inline-block;
+    font-size: 14px; font-weight: 600;
+    padding: 6px 13px; border-radius: 999px;
+    background: rgba(79,199,188,.14); color: var(--accent);
+  }
+  section { padding-top: 26px; margin-top: 26px; border-top: 1px solid var(--rule); }
+  h2 {
+    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 14px;
+  }
+  h3 { font-size: 18px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .point { margin: 0 0 18px; }
+  .point p { margin: 0; color: var(--muted); }
+  footer {
+    padding: 26px 22px 40px;
+    margin-top: 10px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+    display: flex; flex-wrap: wrap; gap: 8px 18px;
+  }
+  footer a { color: var(--blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <video class="splash" src="splash.mp4" poster="splash.jpg" autoplay muted loop playsinline preload="auto"
+         aria-label="Podyglot's launch animation: flags of the world's languages rain down, and the words Learn Spoken arrive before the name Podyglot"></video>
+  <img class="splash still" src="splash.jpg" alt="Podyglot's launch screen: the words Learn Spoken over falling flags">
+
+  <main>
+    <div class="title">
+      <img src="../podyglot.png" alt="Podyglot app icon: a cartoon face wearing headphones">
+      <h1>Podyglot</h1>
+    </div>
+    <p class="subtitle">Spoken French &amp; GCSE Listening</p>
+    <p class="lede">Trains you to understand French as it is actually spoken. A few minutes a day, by ear, at native speed.</p>
+    <span class="devices">For iPhone and iPad</span>
+
+    <section>
+      <h2>How it works</h2>
+      <div class="point">
+        <h3>Listening first</h3>
+        <p>Every lesson is spoken by native voices. You hear a sentence before you read it, and ear training works on the sounds English speakers tend to merge.</p>
+      </div>
+      <div class="point">
+        <h3>A plan for every day</h3>
+        <p>Each day is a short set: listen, learn, recall, fix. Reviews that are due come before anything new, so missing a day never turns into a backlog.</p>
+      </div>
+      <div class="point">
+        <h3>Today, in French</h3>
+        <p>A fresh news edition every morning, written for learners from stories confirmed by independent sources.</p>
+      </div>
+      <div class="point">
+        <h3>Learn together</h3>
+        <p>Invite family and friends into a circle and learn alongside each other. Free to start, with a subscription for the full course.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>GCSE French</h2>
+      <div class="point">
+        <h3>A listening course built around the exam</h3>
+        <p>A GCSE mode for the CCEA French listening paper follows the board&rsquo;s Foundation vocabulary list day by day, over 180 days, until every word on it has been heard in context. Practice questions are derived from real past papers, each checked by a person, and a mock exam runs on the board&rsquo;s own clock.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 BaseCodex</span>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Use</a>
+    <a href="https://pshoben.github.io/podyglot-support/">Support</a>
+  </footer>
+
+</div>
+</body>
+</html>
