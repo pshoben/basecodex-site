@@ -1,0 +1,51 @@
+{
+  "about": "THE SOURCE OF THE ADS SECTION. Edit this, then run `python3 ads/build.py`: it checks every video and writes ads/index.html, and each target app's index.html and manifest.json. Never edit those by hand.",
+  "products": {
+    "podyglot": {
+      "name": "Podyglot",
+      "store": "https://apps.apple.com/app/id6775258823"
+    }
+  },
+  "library": [
+    {
+      "id": "podyglot-14-days",
+      "product": "podyglot",
+      "title": "14 days free for all your household",
+      "file": "podyglot-14-days-iphone.mp4",
+      "device": "iphone",
+      "width": 1080,
+      "height": 2348,
+      "seconds": 19.5,
+      "made": "2026-10-25",
+      "voiceover": "Understanding spoken French at natural speed is the hardest part of learning the language. With Podyglot, you'll train your ear a few minutes a day, hearing real French at full speed, until it all starts to make sense. Try it free for fourteen days, with all your household."
+    },
+    {
+      "id": "podyglot-44-days",
+      "product": "podyglot",
+      "title": "44 days free for all your household (retired: needs a passes code)",
+      "file": "podyglot-44-days-iphone.mp4",
+      "device": "iphone",
+      "width": 1080,
+      "height": 2348,
+      "seconds": 19.5,
+      "made": "2026-10-25",
+      "voiceover": "Understanding spoken French at natural speed is the hardest part of learning the language. With Podyglot, you'll train your ear a few minutes a day, hearing real French at full speed, until it all starts to make sense. Claim your forty-four days free, for all your household."
+    }
+  ],
+  "targets": [
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "bundleId": "com.pshoben.quicksilver",
+      "about": "The free tank game on a mirror (retroarcade/apps/quicksilver).",
+      "ads": [{"ad": "podyglot-14-days", "weight": 1}]
+    },
+    {
+      "id": "mirror-cube",
+      "name": "Mirror Cube",
+      "bundleId": "com.pshoben.mirrorcube",
+      "about": "The head-tracked cube on a mirror (retroarcade/apps/mirror-cube).",
+      "ads": [{"ad": "podyglot-14-days", "weight": 1}]
+    }
+  ]
+}

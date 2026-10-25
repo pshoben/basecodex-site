@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "app": {
+    "id": "mirror-cube",
+    "name": "Mirror Cube",
+    "bundleId": "com.pshoben.mirrorcube"
+  },
+  "ads": [
+    {
+      "id": "podyglot-14-days",
+      "product": "Podyglot",
+      "title": "14 days free for all your household",
+      "video": {
+        "url": "https://basecodex.com/ads/library/podyglot-14-days-iphone.mp4",
+        "device": "iphone",
+        "width": 1080,
+        "height": 2348,
+        "seconds": 19.5,
+        "bytes": 11417596
+      },
+      "tapUrl": "https://apps.apple.com/app/id6775258823?ct=mirror-cube-podyglot-14-days",
+      "weight": 1
+    }
+  ],
+  "version": "b186b8c30f15"
+}
