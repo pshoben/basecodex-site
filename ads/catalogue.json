@@ -35,9 +35,9 @@
   "targets": [
     {
       "id": "quicksilver",
-      "name": "Quicksilver",
-      "bundleId": "com.pshoben.quicksilver",
-      "about": "The free tank game on a mirror (retroarcade/apps/quicksilver).",
+      "name": "Monoscopic Pinball",
+      "bundleId": "com.basecodex.monoscopic.pinball",
+      "about": "The free head-tracked pinball game, three tables in nine stages; an advert between stages (retroarcade/apps/quicksilver).",
       "ads": [{"ad": "podyglot-14-days", "weight": 1}]
     },
     {
